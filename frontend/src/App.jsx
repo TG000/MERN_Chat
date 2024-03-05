@@ -1,9 +1,14 @@
+import { Outlet } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const App = () => {
 	return (
 		<>
-			<button className="btn btn-primary">One</button>
-			<button className="btn btn-secondary">Two</button>
-			<button className="btn btn-accent btn-outline">Three</button>
+			<ToastContainer />
+			<main>
+				<Outlet />
+			</main>
 		</>
 	);
 };
